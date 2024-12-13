@@ -1,0 +1,15 @@
+syntax = "proto3";
+package equisd;
+
+service EquisDe {
+    rpc Ping(MessageRequest) returns (MessageResponse) {}
+}
+
+message MessageRequest {
+    string message = 1;
+}
+
+message MessageResponse{
+    string message = 1;
+    bool received = 2;
+}
