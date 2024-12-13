@@ -28,6 +28,6 @@ class GrpcClient(object):
 
 if __name__ == '__main__':
     # Replace with the actual CodeSandbox URL
-    client = GrpcClient('https://2g4j42-50051.csb.app/')
+    client = GrpcClient('0.0.0.0:50051')
     result = client.get_url(message="Hello Server you there?")
     print(f"{result}")
